@@ -1,0 +1,16 @@
+<% provide(:title, 'Sign Up') %>
+<% provide(:header, 'Sign Up') %>
+
+<div class="row">
+    <div class="col-lg-6 col-lg-offset-3">
+        <%= simple_form_for @user do |f| %>
+            <%= render 'shared/error_messages' %>
+            <%= f.input :Fname, label: 'First Name' %>
+            <%= f.input :Lname, label: 'Last Name' %>
+            <%= f.input :email, label: 'Email', placeholder: 'example@example.com' %>
+            <%= f.input :password %>
+            <%= f.input :password_conformation, label: 'Confirm Password' %>
+            <%= f.button :submit, class: 'btn btn-primary' %>
+        <% end %>
+    </div>
+</div>
