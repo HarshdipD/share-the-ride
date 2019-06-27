@@ -39,3 +39,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # additional gems 
 gem 'bootstrap-sass'
+gem 'simple_form'
