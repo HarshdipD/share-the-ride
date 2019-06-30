@@ -1,24 +1,24 @@
-# README
+### README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+We are creating a completely functional web application using Ruby on Rails which can help people find rides easily. Our aim is to provide a common platform for both riders and customers through which they can have easy access to each other.
 
-Things you may want to cover:
 
-* Ruby version
+### Setup
 
-* System dependencies
+You can follow [these instructions](https://www.tutorialspoint.com/ruby-on-rails/rails-installation.htm) to install `ruby` and the `rails` framework.
 
-* Configuration
+After installing rails, you need to install the dependencies (gems). Navigate to the project directory and run:
 
-* Database creation
+`$ bundle install`
 
-* Database initialization
+Bundler will install all of the project dependencies (located in `Gemfile`) of the project.
 
-* How to run the test suite
+Next create the local database using
 
-* Services (job queues, cache servers, search engines, etc.)
+`$ rails db:setup`
 
-* Deployment instructions
+After that you're ready to launch the site using:
 
-* ...
+`$ rails server` or `$ rails s `
+
+By default, rails will launch the server at [http://localhost:3000](http://localhost:3000).
