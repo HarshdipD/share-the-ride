@@ -42,3 +42,7 @@ gem 'bootstrap-sass'
 gem 'simple_form'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.5'
 gem 'rails-ujs', '~> 0.1.0'
+
+gem :production do
+  gem 'pg'
+end
