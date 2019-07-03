@@ -9,7 +9,9 @@
             <%= f.input :Lname, label: 'Last Name' %>
             <%= f.input :email, label: 'Email', placeholder: 'example@example.com' %>
             <%= f.input :password %>
-            <%= f.input :password_conformation, label: 'Confirm Password' %>
+            <%#= f.input :password_conformation, label: 'Confirm Password' %>
+            <%=f.label :password_confirmation %>
+            <%=f.password_field :password_confirmation%>
             <%= f.button :submit, class: 'btn btn-primary' %>
         <% end %>
     </div>
