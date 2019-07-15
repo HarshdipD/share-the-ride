@@ -1,10 +1,22 @@
 ### README
 
-We are creating a completely functional web application using Ruby on Rails which can help people find rides easily. Our aim is to provide a common platform for both riders and customers through which they can have easy access to each other.
+A complete functional web app to find and post ride shares!
 
-![About Us](README_images/About.png)
+Demo: https://calm-brook-87033.herokuapp.com
 
-![Sign Up Success](https://user-images.githubusercontent.com/31940194/60279220-a62a8480-98ce-11e9-9afc-d3717cee3edb.png)
+### About
+
+Rails version used: 5.2.3
+Additional gems used:
+```
+bootstrap-sass
+simple_form
+jquery-rails
+rails-ujs
+faker
+will_paginate
+bootstrap-will_paginate
+```
 
 ### Setup
 
@@ -25,3 +37,8 @@ After that you're ready to launch the site using:
 `$ rails server` or `$ rails s `
 
 By default, rails will launch the server at [http://localhost:3000](http://localhost:3000).
+
+### Features
+
+
+
