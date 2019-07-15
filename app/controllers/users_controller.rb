@@ -15,6 +15,7 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
+    @microposts = @user.microposts.paginate(page: params[:page])
   end
 
   def create
@@ -54,19 +55,15 @@ class UsersController < ApplicationController
       params.require(:user).permit(:Fname, :Lname, :email, :password, :password_confirmation)
     end
 
-    # check if the user is logged in
-    def logged_in_user
-      unless logged_in?
-        store_location
-        flash[:danger] = "Please log in to access this page"
-        redirect_to login_url
-      end
-    end
-
     # method for checking the current use is accessing their own settings page
     def correct_user
-      @user = User.find(prams[:id])
+      @user = User.find(params[:id])
       redirect_to(root_url) unless @user == current_user
+    end
+
+    # Confirms an admin user.
+    def admin_user
+      redirect_to(root_url) unless current_user.admin?
     end
 
 end
