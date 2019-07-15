@@ -1,0 +1,9 @@
+<h1>Share the Ride</h1>
+
+<p>Hi <%= @user.Fname %>,</p>
+
+<p>
+Welcome to Share the Ride! Click on the link below to activate your account:
+</p>
+
+<%= link_to "Activate", edit_account_activation_url(@user.activation_token, email: @user.email) %>

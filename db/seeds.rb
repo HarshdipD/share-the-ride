@@ -10,9 +10,11 @@ User.create!(Fname:  "Harshdip Singh",
              email: "harshdipsdeogan@gmail.com",
              password:              "foobaras",
              password_confirmation: "foobaras",
-             admin: true)
+             admin: true,
+             activated: true,
+             activated_at: Time.zone.now)
 
-99.times do |n|
+15.times do |n|
   Fname  = Faker::Name.name
   Lname  = Faker::Name.name
   email = "example-#{n+1}@gmails.org"
@@ -21,5 +23,7 @@ User.create!(Fname:  "Harshdip Singh",
                Lname: Lname,
                email: email,
                password:              password,
-               password_confirmation: password)
+               password_confirmation: password,
+               activated: true,
+               activated_at: Time.zone.now)
 end
