@@ -183,6 +183,7 @@ input {
     float: left;
     margin-right: 10px;
     margin-top: 5px;
+    border-radius: 50px;
   }
 }
 
@@ -198,4 +199,14 @@ span.picture {
   input {
     border: 0;
   }
+}
+
+.jumbotron{
+  background-color: #3b5998 ;
+  color: white;
+}
+
+.user_info{
+  padding: 10px;
+  border-radius: 15px;
 }
