@@ -59,8 +59,7 @@ By default, rails will launch the server at [http://localhost:3000](http://local
 
  - Microposts is a new model that holds the content or posts by users
  - Associations: 
-    - image belongs_to
-    - image has_many
+    - ![associations](https://ibb.co/nchQ10L)
  - Microposts are retrieved in most-recently-created order
  - Microposts is dependent on user: If a user's account is deleted, microposts will be deleted too
  - Miropost controller manages creation and destruction of microposts
