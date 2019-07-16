@@ -2,7 +2,7 @@
 
 A complete functional web app to find and post ride shares!
 
-Demo: https://calm-brook-87033.herokuapp.com
+Demo: http://quiet-ocean-56985.herokuapp.com/
 
 ### About
 
