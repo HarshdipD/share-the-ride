@@ -1,8 +1,10 @@
 ### README
+Note: This project has been started from scratch. The information below corresponds to the previous version.
 
 A complete functional web app to find and post ride shares!
 
 Demo: http://quiet-ocean-56985.herokuapp.com/
+Please use username: example1@shopify.com and password: password
 
 ### About
 
