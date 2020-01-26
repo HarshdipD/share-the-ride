@@ -1,5 +1,6 @@
 ### README
-Note: This project has been started from scratch. The information below corresponds to the previous version.
+
+This project has been started from scratch in a private repository. The information below corresponds to this prototype version.
 
 A complete functional web app to find and post ride shares!
 
